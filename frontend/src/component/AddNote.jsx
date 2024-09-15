@@ -12,7 +12,7 @@ export const AddNote = () => {
       body,
       category,
     };
-    fetch("http://localhost:4500/notes/create", {
+    fetch("https://note-application-3-5nm9.onrender.com/notes/create", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

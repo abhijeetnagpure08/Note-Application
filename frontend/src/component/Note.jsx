@@ -11,7 +11,7 @@ export const Note = () => {
   }, []);
 
   const fetchNotes = () => {
-    fetch("http://localhost:4500/notes", {
+    fetch("https://note-application-3-5nm9.onrender.com/notes", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -23,7 +23,7 @@ export const Note = () => {
   };
 
   const handleDelete = (noteID) => {
-    fetch(`http://localhost:4500/notes/delete/${noteID}`, {
+    fetch(`https://note-application-3-5nm9.onrender.com/notes/delete/${noteID}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

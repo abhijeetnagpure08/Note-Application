@@ -10,7 +10,7 @@ export const UpdateNote = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`http://localhost:4500/notes/${noteID}`, {
+    fetch(`https://note-application-3-5nm9.onrender.com/notes/${noteID}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -54,11 +54,11 @@ export const UpdateNote = () => {
         onChange={(e) => setTitle(e.target.value)}
       />
       <label htmlFor="body">Body</label>
-      <textarea
+      <input
         id="body"
         value={body}
         onChange={(e) => setBody(e.target.value)}
-      ></textarea>
+      ></input>
       <label htmlFor="category">Category</label>
       <input
         type="text"

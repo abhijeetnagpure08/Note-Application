@@ -11,7 +11,7 @@ export const Signup = () => {
     const handleSubmit = () => {
         const payload = { name, email, pass };
 
-        fetch("http://localhost:4500/users/register", {
+        fetch("https://note-application-3-5nm9.onrender.com/users/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
